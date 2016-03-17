@@ -62,7 +62,7 @@ then
     echo "- a single fasta file with n1+n2+n3+n4+n5 chimeric transcripts randomly selected from the gene pairs of the 5 classes" >&2 
     echo "- an Aux directory with some intermediate files" >&2
     echo "NOTE1: cannot be run twice in the same directory without loosing previous outputs since uses fixed names for outputs" >&2 
-    echo "NOTE2: needs gem-retriever binay of the same gemtools version as the one used to generate gem genome index used as input !!!" >&2 
+    echo "NOTE2: needs gem-retriever binay of the same gemtools version as the one used to generate gem genome index used as input" >&2 
     echo "" >&2
     exit 1
 fi
