@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# make_chimtr_from_annot_better.sh
-##################################
+# ChimSim.sh
+############
 # Given as input:
 #################
 # - a gene annotation (1st arg, gtf file with at least exon and gene rows and where the gene id is in column 10 and transcript id is in column 12), 
@@ -36,7 +36,7 @@
 # cd /no_backup/rg/sdjebali/Chimeras/Benchmark/Data/Make_Chimeras_from_Annot/Test
 # annot=/users/rg/projects/encode/scaling_up/whole_genome/Gencode/version19/Long/gencode.v19.annotation.long.gtf
 # genome=/users/rg/projects/references/Genome/H.sapiens/hg19/gemtools1.7.1-i3/Homo_sapiens.GRCh37.chromosomes.chr.M.gem
-# time make_chimtr_from_annot.sh $annot $genome 50 50 50 50 50 ../wanted_gnbt.txt 2> make_chimtr_from_annot.err
+# time ChimSim.sh $annot $genome 50 50 50 50 50 ../wanted_gnbt.txt 2> make_chimtr_from_annot.err
 # about 30 minutes
 
 # inputs
@@ -48,7 +48,7 @@
 if [ ! -n "$1" ] || [ ! -n "$2" ] || [ ! -n "$3" ] || [ ! -n "$4" ] || [ ! -n "$5" ] || [ ! -n "$6" ] || [ ! -n "$7" ]
 then
     echo "" >&2
-    echo "Usage: make_chimtr_from_annot_better.sh annot.gtf genome.gem n1 n2 n3 n4 n5 [list_gn_bt.txt]" >&2
+    echo "Usage: ChimSim.sh annot.gtf genome.gem n1 n2 n3 n4 n5 [list_gn_bt.txt]" >&2
     echo "where" >&2
     echo "- annot.gtf is a gene annotation (with at least exon and gene rows and where gene id and transcript id are in column 10 and 12) (mandatory)" >&2
     echo "- genome.gem is a genome index produced by gem (mandatory)" >&2
